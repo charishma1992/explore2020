@@ -1,0 +1,143 @@
+.topmargin{
+    margin-top: 3rem;
+}
+
+
+.owl-carousel {
+  width: 90% !important;
+  margin: 10% auto;
+}
+
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+  
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 30% !important;
+}
+ 
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+ 
+.owl-carousel .prev-slide {
+  /* background: url("assets/images/nav-icon.png") no-repeat scroll 0 0; */
+  left: -33px;
+}
+
+.owl-carousel .next-slide {
+  /* background: url(assets/images/nav-icon.png) no-repeat scroll -24px 0px; */
+  right: -33px;
+}
+.owl-carousel-margin{
+    margin-left:26px;
+}
+.owl-carousel .prev-slide:hover {
+  background-position: 0px -53px;
+}
+ 
+.owl-carousel .next-slide:hover {
+  background-position: -24px -53px;
+} 
+
+.owl-carousel .owl-drag .owl-item {
+    width:276px !important;
+}
+div.slide-text{
+    text-align: center;
+}
+.carousel-caption {
+    position: absolute;
+    top: 10%;
+    /* right: 15%; */
+    /* bottom: 20px; */
+    left:15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Oleo Nova Bold;
+    font-size:34px;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:700px){
+    .carousel-caption{
+        position: absolute;
+        top: 10%;
+        /* right: 15%; */
+        /* bottom: 20px; */
+        left:15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        font-family: Oleo Nova Bold;
+        font-size:14px;
+    }
+
+    .captionWidth{
+        width:20rem !important;
+    }
+}
+@media only screen and (min-width:701px) and (max-width:1023px){
+  .captionWidth{
+    width:20rem !important;
+}
+.rowheight{
+  height: 18rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media only screen and (min-width:1024px) and (max-width:1366px){
+  .captionWidth{
+    width:26rem !important;
+}
+.rowheight{
+  height: 25rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+.countryImage{
+     /* border-radius: 50%; */
+width: 68%;
+height: 133%;
+}
+.displayCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowheight{
+  /* height: 30rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captionWidth{
+  width:35rem;
+}
+.carouselalign{
+  width:100%;
+  overflow: hidden;
+      margin-left: 15px;
+}
+
+#myP2{
+  animation: bounceInLeft;
+}

@@ -1,0 +1,106 @@
+.cardHighlight{
+    border-radius: 0px;
+    background-color: #b3d6d1bf;
+    /* box-shadow: 2px 2px 4px #cec7c7; */
+    height: 150px;
+    border:none !important;
+    text-align: center;
+   
+}
+.displayCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.cardtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    box-shadow: 4px 4px 6px #9e9b9b;
+}
+.cardtextOnhover{
+   height:0px; 
+   /* display:none; */
+    width:100%;
+    /* text-align: center; */
+    background-color: rgb(235, 239, 240);
+    -webkit-transition: height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.2s;
+    margin-top:105px;
+	position:absolute;
+}
+
+.card:hover .cardtextOnhover{
+    /* display:block; */
+    /* margin-top:105px; */
+    height:30%;
+    text-align: center;
+}
+.card:hover .card-body{
+    position: relative;
+    /* width: 100%;
+    text-align: center; */
+
+}
+.card-title:hover{
+    zoom:2;
+    cursor: pointer;
+}
+.slide{
+    display: none;
+}
+.card:hover .slide{
+    display: block;
+}
+
+.portfolioDisc {
+	width: 300px;
+    height: 0px;
+	padding-top: 0px;
+    overflow:hidden;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin-top:300px;
+	position:absolute;
+	background-color:#000;
+	font-size: 15px;
+	line-height: 18px;
+	text-align:center;
+	color: #FFF;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}
+
+.port {
+	background-color: red;
+	width:300px;
+	height: 300px;
+	position:relative;
+	}
+
+
+.port:hover .portfolioDisc {
+	margin-top:221px;
+    height:69px;
+	padding-top: 10px;
+	
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+   }
+
+agm-map {
+    height: 300px;
+}
+ 
+.sbmtbtn{
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 22px;
+    width: 100%;
+}

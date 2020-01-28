@@ -1,0 +1,196 @@
+<div class="container mt-5">
+    <div class="row displayCenter">
+        <h1 class="fontheading" style=" color:#f26716ad; text-align: center;">{{chartHeading}}</h1>
+    </div>
+    <div class="row displayCenter fontProxima">
+        <div style="text-align: center">Catogery: &nbsp;&nbsp;&nbsp;{{schemeCatogery}}</div>
+    </div>
+
+    <div class="row displayCenter fontProxima">
+        <div style="font-size: 45px;">{{latestNav}} </div> &nbsp;&nbsp;&nbsp;
+        <i class="fa fa-arrow-up" style="font-size:24px" [ngStyle]="{'color':increment < 0 ? 'red' : 'green'}" *ngIf="increment > 0"
+            aria-hidden="true"></i>
+        <i class="fa fa-arrow-down" [ngStyle]="{'color':increment < 0 ? 'red' : 'green'}" *ngIf="increment < 0" aria-hidden="true"></i>
+        <div [ngStyle]="{'color':increment < 0 ? 'red' : 'green'}">{{increment}}</div>
+    </div>
+    <div class="row displayCenter fontProxima">
+        as on {{latestDate}}
+    </div>
+    <div class="row d-flex flex-row-reverse mt-5 mb-3">
+        <select class="mt-1 dpdwn" name="parserType" id="exampleSelect1" [(ngModel)]="period" (change)="changeGraph()">
+            <option value="" disabled>Select</option>
+            <option *ngFor="let filter of filterGraph" value="{{filter}}">{{filter}}</option>
+        </select>
+    </div>
+    <div class="row" style="box-shadow: 2px 2px 6px #bfbcbc;">
+        <div class="mt-5" id="chartContainer" style="width: 100%; height: 400px;"></div>
+    </div>
+    <div class="row mt-5 fontheading" style="background: #fff5f5;;padding: 12px; color:#f26716ad; text-align: center;">
+        History
+    </div>
+    <div class="row displayCenter mt-2">
+        <!-- <div id="lumpsum-tabulator"></div> -->
+
+        <table class="table table-striped fontProxima">
+            <thead>
+                <tr>
+
+                    <th scope="col">Date</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Gains</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let track of data1;let i= index" >
+                    <td *ngIf="i < 10">{{track.utcDate}}</td>
+                    <td *ngIf="i<10">{{track.nav}}</td>
+                    <td *ngIf="i<10" [ngStyle]="{'color':track.gains < 0 ? 'red' : 'green'}">
+                            <i class="fa fa-arrow-up" style="font-size:10px" [ngStyle]="{'color':track.gains < 0 ? 'red' : 'green'}" *ngIf="track.gains > 0"
+                                    aria-hidden="true"></i>
+                                <i class="fa fa-arrow-down" style="font-size:10px" [ngStyle]="{'color':track.gains < 0 ? 'red' : 'green'}" *ngIf="track.gains < 0"
+                                    aria-hidden="true"></i>
+                            {{track.gains}}%</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="row mt-5 fontheading" style="background: #fff5f5;;padding: 12px; color:#f26716ad; text-align: center;">
+        Investments
+    </div>
+    <div class="row mt-3 fontProxima">
+        If you have Lumpsum(for 100000/-) before 3years:
+    </div>
+    <div class="row displayCenter ">
+        <div class="profit" [ngStyle]="{'background':LumpsumProfit < 0 ? '#fd5e53' : '#50d890'}">
+            {{LumpsumProfit}}/-
+        </div>
+    </div>
+    <!-- <div class="row mt-5 fontProxima">
+        If you have started SIP(for 1000/-) before 3years:
+    </div>
+    <div class="row displayCenter ">
+        <div class="profit" [ngStyle]="{'background':SIPProfit < 0 ? '#fd5e53' : '#50d890'}">
+            {{SIPProfit}}/-
+        </div>
+    </div> -->
+
+    <div class="row mt-5 fontheading" style="background: #fff5f5;;padding: 12px; color:#f26716ad; text-align: center;">
+        Returns
+    </div>
+    <div class="row mt-3 fontProxima">
+        Lumpsum Returns:
+    </div>
+    <div class="row displayCenter mt-2">
+        <!-- <div id="lumpsum-tabulator"></div> -->
+
+        <table class="table table-striped fontProxima">
+            <thead>
+                <tr>
+
+                    <th scope="col">Period</th>
+                    <th scope="col">Investment</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Gains</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let year of yearlyLumpSumReturns">
+                    <td>{{year.tenure}}years</td>
+                    <td>{{year.invest_amount}}/-</td>
+                    <td [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}">{{year.current_value}}/-</td>
+                    <td [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}">
+                        <i class="fa fa-arrow-up" style="font-size:10px" [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}" *ngIf="year.value > 0"
+                            aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down" style="font-size:10px" [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}" *ngIf="year.value < 0"
+                            aria-hidden="true"></i>
+                        {{year.value}}/-</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row mt-3 fontProxima">
+        SIP Returns:
+    </div>
+    <div class="row displayCenter mt-2" style="background: #f7f6f6;
+    padding: 39px 22px;">
+        <!-- <div id="lumpsum-tabulator"></div> -->
+        <!-- 
+        <table class="table table-striped fontProxima">
+            <thead>
+                <tr>
+
+                    <th scope="col">Period</th>
+                    <th scope="col">Investment</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Gains</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let year of yearlySIPReturns">
+                    <td>{{year.tenure}}years</td>
+                    <td>{{year.invest_amount}}/-</td>
+                    <td [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}">{{year.current_value}}/-</td>
+                    <td [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}">
+                        <i class="fa fa-arrow-up" style="font-size:10px" [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}"
+                            *ngIf="year.value > 0" aria-hidden="true"></i>
+                        <i class="fa fa-arrow-down" style="font-size:10px" [ngStyle]="{'color':year.value < 0 ? 'red' : 'green'}" *ngIf="year.value < 0"
+                            aria-hidden="true"></i>{{year.value}}/-</td>
+
+                </tr>
+
+            </tbody>
+        </table> -->
+        <form [formGroup]="sipForm">
+            <div class="form-group" style="text-align: center;">
+                <label for="exampleInputEmail1" class="fontProxima">SIP AMOUNT:</label>
+                <input type="text" class="form-control " formControlName="sipAmount" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Amount">
+
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <label for="exampleInputPassword1" class="fontProxima">DURATION:</label>
+                <input type="text" class="form-control" formControlName="sipTenure" id="exampleInputPassword1" placeholder="Tenure in years">
+            </div>
+
+            <div style="display: flex;justify-content: center;" *ngIf="!sipLoader">
+                <button type="submit" class="btn btn-primary" (click)="CalculateSIP()">Calculate</button>
+            </div>
+
+            <div style="display: flex;justify-content: center;" *ngIf="sipLoader">Calculating.....</div>
+        </form>
+
+
+        <div class="col-md-12 mt-4" style="text-align: center;" *ngIf="sipCalculated">
+            <div class="row fontProxima">
+                <div class="col-md-4">
+                    <u>Total Investment</u>
+                </div>
+                <div class="col-md-4">
+                    <u>Wealth Gained</u>
+                </div>
+                <div class="col-md-4">
+                    <u>Maturity Amount </u>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-12 fontProxima" style="text-align: center;font-size: 3rem;" [ngStyle]="{'color':SIPProfit < 0 ? '#fd5e53' : '#50d890'}"
+            *ngIf="sipCalculated">
+            <div class="row">
+                <div class="col-md-4">{{total_amount_invested}}/-</div>
+                <div class="col-md-4">{{SIPProfit}}/-</div>
+                <div class="col-md-4">{{MaturityAmt}}/-</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mb-5">
+
+    </div>
+</div>

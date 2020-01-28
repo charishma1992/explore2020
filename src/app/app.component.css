@@ -1,0 +1,80 @@
+
+.display-list-of-numbers {
+    height: 100px;
+    width: 100%;
+    border: 3px solid dodgerblue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #map {
+    height: 500px;
+    width: 100%;
+   }
+
+   .tab{
+    margin: 8px 24px;
+   }
+   .font{
+    font-size: 20px;
+    font-family: fontProxima;
+   }
+  .footer{
+    /* background-color: rgb(241, 237, 237); */
+    color:#d5dbde;
+    box-shadow: -1px -1px 9px #909094;
+    background-image: url("/assets/images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 216px;
+  }
+
+  .footer-icons{
+    font-size: 2.5rem;
+    color: #d5dbde;
+    margin: 13px;
+  }
+.setIcons{
+  display: flex;
+    /* justify-content: center; */
+}
+.addressfont{
+  font-size: 18px;
+  font-family: fontProxima;
+}
+
+@media screen and (min-width:300px) and (max-width:760px){
+  .tagline {
+    display:none !important;
+  }
+  .mobtravelfont{
+    font-size:30px !important;
+  }
+  .mobmarginCopy{
+    margin-top: 3px !important;
+  }
+  .mobaddlfont{
+    font-size:13px !important;
+  }
+}
+.tagline {
+  display:block;
+}
+.mobtravelfont{
+  font-size:39px;
+}
+.mobmarginCopy{
+  margin-top: 17px;
+}
+.mobaddlfont{
+  font-size:17px;
+}
+
+.bottomMenu {
+    width: 100%;
+   margin-top:10px;
+    border-top: 1px solid #000;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    opacity: 0;
+}

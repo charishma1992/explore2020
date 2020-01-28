@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+@font-face {
+    font-family: 'Bradley Hand ITC';
+    src: url("assets/Fonts/bradhitc.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.fontBradley{
+  font-family:'Bradley Hand ITC';
+  font-size:16px;
+  color:#001135; 
+  }
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("assets/Fonts/proximanova-semibold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Oleo Nova Bold';
+  src: url("assets/Fonts/OleoScript-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oleo Nova Regular';
+  src: url("assets/Fonts/OleoScript-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.fontOleo{
+  font-family:'Oleo Nova Bold';
+  font-size:24px;
+  color:lightgray; 
+}
+.fontOleoRegular{
+  font-family:'Oleo Nova Regular';
+  font-size:24px;
+  color:gray; 
+}
+.fontProxima{
+  font-family:'Proxima Nova';
+  font-size:16px;
+  color:#001135; 
+}
+.fontProximaheading{
+    font-family:'Proxima Nova';
+    font-size:40px;
+    color:#001135; 
+}
+.fontProximaNovaParagrah{
+    font-family:'Proxima Nova';
+    font-size:24px;
+    color:#8c8e8f;; 
+}
+
+div #dictionaries-tabulator{
+  background-color: #eeeeee !important;
+  padding: 0px;
+  border: none !important;
+  border-radius: 5px;
+}
+#dictionaries-tabulator .tabulator-header{
+  background-color: #fff !important;
+  border: none !important;
+  font-weight: 100 !important;
+}
+#dictionaries-tabulator  .tabulator-col-title{
+  font-family: 'NokiaPureText-Bold' !important;
+  font-size: 1rem !important;
+  font-style: normal !important;
+  color: #001135 !important;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+#dictionaries-tabulator  .tabulator-col{
+  border-radius: 5px !important;
+  border: 2px solid #fff !important;
+  background-color: #eeeeee !important;
+}
+#dictionaries-tabulator   .tabulator-cell{
+  font-family: 'NokiaPureText-Regular' !important;
+  /* font-size: 1rem !important; */
+  font-size: 14px !important;
+  border-radius: 8px;
+  font-style: normal !important;
+   /* background-color: #eeeeee !important;  */
+  border: 2px solid #fff ;
+  padding: 10px !important;
+  border-right: none !important;
+  color: #001135 ;
+  white-space: pre-wrap !important;
+  font-weight: 100 !important;
+  background-color: #e6e6e6 !important; 
+  border-bottom: 2px solid #fff ;
+}
+/* #dictionaries-tabulator .tabulator-row {
+  /* background-color: #efefef !important; 
+} */
+/* input[type=search]::placeholder{
+  background-image: url('/assets/icons/general/search.png');
+  background-repeat: no-repeat;
+  text-indent: 0px;
+  background-size: 16px !important;
+  background-position: center left;
+  border: none !important;
+  background-color: #efefef;
+} */
+
+#lumpsum-tabulator .tabulator-header-filter{
+  border-bottom:1px solid #DEDEE3 !important;
+}
+
+#lumpsum-tabulator .tabulator-header-filter input[type=search] {
+  border: none !important;
+  background-color: #efefef;
+  padding: 4px 8px !important;
+}
+
+#lumpsum-tabulator input[type=search]::placeholder{
+  background-image: url('/assets/icons/general/search.png');
+  background-repeat: no-repeat;
+  text-indent: 0px;
+  background-size: 16px !important;
+  background-position: center left;
+
+}
+#lumpsum-tabulator .tabulator-footer {
+text-align: center !important;
+}
+#lumpsum-tabulator .tabulator-col {
+border-right:  2px solid #fff !important;
+}
+#lumpsum-tabulator .tabulator-row.tabulator-row-odd{
+  /* background-color: #efefef ; */
+  background-color: white !important;
+}
+#lumpsum-tabulator  .tabulator-row.tabulator-row-even{
+  /* background-color: #efefef ; */
+  background-color: white !important;
+}

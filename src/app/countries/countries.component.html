@@ -1,0 +1,79 @@
+<div class="container ">
+ 
+  <!-- <div class="row">
+    <circle-progress [percent]=c heckpercent [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8" [outerStrokeColor]=c
+      heckColorOuter [innerStrokeColor]=c heckColorInner [animation]="true" [animationDuration]="300"></circle-progress>
+  </div> -->
+  <form [formGroup]="countryform">
+  <div class="row">
+    
+      <b>Select Country: </b> &nbsp;
+      <select class="form-control mt-1" name="parserType" id="exampleSelect1" formControlName="country" >
+        <option value = "" >Select</option>
+        <option *ngFor="let country of countries" value="{{country.name}}">{{country.name}}</option>
+      </select>
+   
+  </div>
+  <!-- <div class="row">
+    
+      <b>Select Country: </b> &nbsp;
+      <select class="form-control mt-1" name="parserType" id="exampleSelect1" formControlName="ToCountry" >
+        <option value = "" >Select</option>
+        <option *ngFor="let country of countries" value="{{country.name}}">{{country.name}}</option>
+      </select>
+   
+  </div> -->
+
+
+  <div class="row displayCenter">
+    <div class="mt-3"><button (click)="Locate()">Locate on Maps</button></div>
+  </div>
+</form>
+  <!-- <div class="row" cdkDropList #clist="cdkDropList" [cdkDropListData]="countries" (cdkDropListDropped)="Drop($event)">
+    <div class="col-md-12 p-0 " style="margin:5px" *ngFor="let country of countries;let i = index" cdkDrag>
+      <div class="card cardHighlight" (click)="openDetails(country)">
+        <div class="card-body cardtext">
+          <h5 class="card-title fontBradley" (click)="ChangeTitle(country)">{{i+1}}.{{country.name}}</h5>
+        
+        </div>
+        <div class="cardtextOnhover fontBradley cardtext">
+       
+          <button class=" btn-primary slide" (click)="Locate(i)">Locate On Maps</button>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-6" tyle="margin:5px" *ngFor="let country of countries;let i = index"  cdkDrag>
+        <div class="card cardHighlight">
+        <div class="card-body cardtext">
+          <h5 class="card-title fontBradley">{{i+1}}.{{country.name}}</h5>
+        </div>
+      </div>
+    </div> 
+  </div> -->
+  <!-- <div width="100%" align="center">Hover<br /><br />
+    <div class="port">
+      dfgkdfhgjkhdfk dfgkdf;gkd;lfgkggf
+      <div class="col-md-6">
+        dfkjgkdfjgjfgf
+        dfm;gmdf;
+        ;mfgmdf;
+      </div>
+    <div class="portfolioDisc">Image<br />description<br />here</div>
+    </div> -->
+
+</div>
+<div class="mt-5" #mapContainer id="map"></div>
+<!-- <agm-map [latitude]="lat" [longitude]="lng" >
+    <agm-marker [latitude]="lat" [longitude]="lng" 
+    ></agm-marker>
+  </agm-map> -->
+
+  <div class="row mb-5">
+
+    </div >
+    <div class="row mb-5">
+
+      </div >
+      <div class="row mb-5">
+  
+        </div >

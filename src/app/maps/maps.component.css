@@ -1,0 +1,40 @@
+.displayCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* @media only screen and (min-width:300px) and (max-width:766px){
+.fontheading{
+  font-family: 'Proxima Nova';
+    font-size: 32px;
+    text-align: center;
+}
+  } */
+
+.fontheading{
+    font-family: 'Proxima Nova';
+      font-size: 40px;
+      text-align: center;
+  }
+
+  .dpdwn{
+    width: 35%;
+    border-radius: 0.3rem;
+    border: 1px solid #dfdfe2;
+    box-shadow: 3px 3px 3px #e8e5e5;
+  }
+  .profit{
+    /* padding: 60px;
+    box-shadow: 3px 3px 5px #d1d4d1;
+      font-family: 'Proxima Nova';
+      font-size: 24px;
+      color: white; */
+      width: 400px;
+      height: 200px;
+      font-family: 'Proxima Nova';
+      font-size: 48px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

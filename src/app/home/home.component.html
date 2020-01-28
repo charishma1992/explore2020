@@ -1,0 +1,170 @@
+<div class="container-fluid pl-2 pr-2">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <img src="assets/images/home page.jpg" width="100%"> -->
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/home page.jpg" alt="Los Angeles" style="width:100%">
+            <div class="carousel-caption animated zoomIn">
+              <h3>Los Angeles</h3>
+              <p>"LA CityView" is the City of Los Angeles' official cable channel available on channel 35...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/travel.jpeg" alt="Egypt" style="width:100%">
+            <div class="carousel-caption animated zoomIn">
+              <h3>Egypt</h3>
+              <p>Egypt, on Lake Michigan in Illinois, is among the largest cities in the U.S. Famed for its bold architecture...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/travel2.jpg" alt="New York" style="width:100%">
+            <div class="carousel-caption animated zoomIn">
+              <h3>New York</h3>
+              <p>New York is a state located in the Northeastern United States. New York was one of the original thirteen colonies
+                that formed the United States...</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5 animated zoomIn">
+    <!-- <div class="col-md-12">
+      <h1 class="fontProximaheading">Country</h1>
+    </div>
+    <div class="col-md-12">
+      <hr size="30">
+    </div> -->
+
+    <div class="col-md-12 mt-3 rowheight" id="myP3">
+      <div class="row">
+        <div class="col-md-6  justify-content-center  ">
+          <div style="text-align: center">
+            <img src="assets/images/enjoyment.jpg" class="countryImage">
+          </div>
+        </div>
+        <div class="col-md-6 displayCenter ">
+          <!-- <div class="fontOleoRegular" style="width: 35rem;"> -->
+          <div class="fontOleoRegular captionWidth">
+            <h1 style="color:black">Enjoyment</h1>
+            Enjoyment is what you experience when you are having a good time. You probably experience enjoyment in an amusement park,
+            and a lack of enjoyment at the dentist....
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="col-md-12 mt-3">
+        <div class="d-flex flex-row-reverse">
+            <div >
+              <a routerLink="/travel"> View More</a>
+            </div>
+          </div>
+    </div> -->
+  </div>
+
+  <div class="row mt-5" id="myP2">
+    <div class="col-md-12 mt-3 rowheight">
+      <div class="row">
+        <div class="col-md-6 d-flex flex-row-reverse ">
+          <div class="fontOleoRegular captionWidth">
+            <h1 style="color:black">Refreshment</h1>
+            The free event starts in the late afternoon with luminaries, holiday music and refreshments..
+          </div>
+        </div>
+        <div class="col-md-6  justify-content-center">
+          <div style="text-align: center">
+            <img src="assets/images/refreshment.jpg" class="countryImage">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row mt-5 " id="myP1">
+    <div class="col-md-12 mt-3 rowheight">
+      <div class="row">
+        <div class="col-md-6  justify-content-center">
+          <div style="text-align: center">
+            <img src="assets/images/enjoyment.jpg" class="countryImage">
+          </div>
+        </div>
+        <div class="col-md-6 displayCenter ">
+          <!-- <div class="fontOleoRegular" style="width: 35rem;"> -->
+          <div class="fontOleoRegular captionWidth">
+            <h1 style="color:black">Relaxation</h1>
+            Relaxation in psychology, is the emotional state of a living being, of low tension.. </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-10 offset-md-1 mt-5">
+          <h1 class="fontOleoRegular" style="color: black;
+          font-size: 47px;">Travel</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-12 mt-3">
+      <div class="row">
+        <div class="col-md-10 offset-md-1 ">
+          <p class="fontOleoRegular">Travel is the movement of people between distant geographical locations. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mt-5 ">
+      <div class="col-md-10 offset-md-1">
+        <div class="carouselalign">
+          <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+            <div class="item" *ngFor="let image of images;let i= index">
+              <img class="slide-image" src="{{image.image}}">
+              <div class="slide-text mt-1">
+                <h4 class="fontProxima">{{image.text}}</h4>
+              </div>
+            </div>
+          </owl-carousel>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- <div class="col-md-12 mt-3">
+      <div class="d-flex flex-row-reverse">
+        <div>
+          <a routerLink="/travel"> View More</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- <div class="owl-carousel" owlCarousel>
+<div> <img class="d-block img-fluid" src="assets/images/travel.jfif" width="100%"></div> 
+<div> <img class="d-block img-fluid" src="assets/images/travel1.jfif" width="100%"></div> 
+<div> <img class="d-block img-fluid" src="assets/images/travel.jfif" width="100%"></div> 
+<div> <img class="d-block img-fluid" src="assets/images/travel1.jfif" width="100%"></div>
+</div>   -->

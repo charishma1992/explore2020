@@ -1,0 +1,69 @@
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-md-6 animated slideInLeft">
+      <img src="assets/images/mutualfund1.jpg" width=100%>
+    </div>
+    <div class="col-md-6 fontOleoRegular  animated slideInRight" style="display:flex;justify-content:center;align-items: center;">
+      <!-- <img src="assets/images/mutualfund.jpg" width=100%> -->
+      <div>If you have the stomach for stocks, but neither the time nor the inclination to do the homework, invest in equity mutual
+        funds.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-3" style="background: #f7f6f6;
+padding: 39px 22px;">
+  <div class="col-md-12 fontheading"> Why Invest in Mutual Funds?</div>
+  <div class="col-md-10 offset-md-1 mt-3 fontOleoRegular" style="color:#8d5050">That is a good thing because mutual funds would be poor investment products if they did. The purpose of investing in mutual
+    funds is to earn higher returns than what traditional investments offer. ... Short-term as well as long-term gains from
+    mutual funds are taxed in a way that it doesn't eat into the returns</div>
+
+</div>
+
+<div class="row mt-5 fontheading" style="background: #fffffc;;padding: 12px; color:black; text-align: center;">
+  <div class="col-md-12">
+    Track Your Fund portfolio
+
+  </div>
+</div>
+
+
+<div class="container">
+  <form [formGroup]="fundForm">
+    <div class="row">
+
+      <b>Select Fund: </b> &nbsp;
+      <select class="form-control mt-1 fontProxima" name="parserType" id="exampleSelect1" formControlName="fundname">
+        <option value="" disabled>Select your Fund</option>
+        <option *ngFor="let fundname of funds" value="{{fundname.Name}}">{{fundname.Name}}</option>
+      </select>
+
+    </div>
+    <div class="row" style="display:flex;justify-content:center">
+      <div>
+        <button type="submit" class="btn btn-lg sbmtbtn" (click)="submit()">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="row mb-5">
+
+</div>
+<div class="row mb-5">
+
+</div>
+<div class="row mb-5">
+
+</div>
+<div class="row mb-5">
+
+</div>
+
+
+
+
+<!-- <div class="mt-5" id="chartContainer" style="width: 100%; height: 400px;"></div> -->
