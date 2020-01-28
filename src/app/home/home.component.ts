@@ -124,7 +124,7 @@ export class HomeComponent implements OnInit {
         document.getElementById("myP2").style.visibility = 'visible';
         document.getElementById("myP3").style.visibility = 'visible';
         console.log($(window).scrollTop() == ($(document).height() - $(window).height()));
-        if ($(window).scrollTop()+295  > 300) {
+        if ($(window).scrollTop() + 295 > 300) {
           this.check = true;
           document.getElementById("myP3").style.visibility = "visible";
           document.getElementById("myP3").style.animation = "bounceInLeft 5s";
@@ -139,7 +139,7 @@ export class HomeComponent implements OnInit {
         //   // document.getElementById("myP").style.transition= "all 2s";
 
         // }
-        if ($(window).scrollTop()+315  > 300) {
+        if ($(window).scrollTop() + 315 > 300) {
           this.check = true;
           document.getElementById("myP1").style.visibility = "visible";
           document.getElementById("myP1").style.animation = "bounceInUp 5s";
