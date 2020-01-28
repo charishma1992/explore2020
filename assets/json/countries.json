@@ -1,0 +1,518 @@
+[
+
+
+    {
+    "name": "Viet Nam",
+    "topLevelDomain": [
+    ".vn"
+    ],
+    "alpha2Code": "VN",
+    "alpha3Code": "VNM",
+    "callingCodes": [
+    "84"
+    ],
+    "capital": "Hanoi",
+    "altSpellings": [
+    "VN",
+    "Socialist Republic of Vietnam",
+    "Cộng hòa Xã hội chủ nghĩa Việt Nam"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 92700000,
+    "latlng": [
+    16.16666666,
+    107.83333333
+    ],
+    "demonym": "Vietnamese",
+    "area": 331212,
+    "gini": 35.6,
+    "timezones": [
+    "UTC+07:00"
+    ],
+    "borders": [
+    "KHM",
+    "CHN",
+    "LAO"
+    ],
+    "nativeName": "Việt Nam",
+    "numericCode": "704",
+    "currencies": [
+    {
+    "code": "VND",
+    "name": "Vietnamese đồng",
+    "symbol": "₫"
+    }
+    ],
+    "languages": [
+    {
+    "iso639_1": "vi",
+    "iso639_2": "vie",
+    "name": "Vietnamese",
+    "nativeName": "Tiếng Việt"
+    }
+    ],
+    "translations": {
+    "de": "Vietnam",
+    "es": "Vietnam",
+    "fr": "Viêt Nam",
+    "ja": "ベトナム",
+    "it": "Vietnam",
+    "br": "Vietnã",
+    "pt": "Vietname",
+    "nl": "Vietnam",
+    "hr": "Vijetnam",
+    "fa": "ویتنام"
+    },
+    "flag": "https://restcountries.eu/data/vnm.svg",
+    "regionalBlocs": [
+    {
+    "acronym": "ASEAN",
+    "name": "Association of Southeast Asian Nations",
+    "otherAcronyms": [],
+    "otherNames": []
+    }
+    ],
+    "cioc": "VIE"
+    },
+    {
+    "name": "Wallis and Futuna",
+    "topLevelDomain": [
+    ".wf"
+    ],
+    "alpha2Code": "WF",
+    "alpha3Code": "WLF",
+    "callingCodes": [
+    "681"
+    ],
+    "capital": "Mata-Utu",
+    "altSpellings": [
+    "WF",
+    "Territory of the Wallis and Futuna Islands",
+    "Territoire des îles Wallis et Futuna"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 11750,
+    "latlng": [
+    -13.3,
+    -176.2
+    ],
+    "demonym": "Wallis and Futuna Islander",
+    "area": 142,
+    "gini": null,
+    "timezones": [
+    "UTC+12:00"
+    ],
+    "borders": [],
+    "nativeName": "Wallis et Futuna",
+    "numericCode": "876",
+    "currencies": [
+    {
+    "code": "XPF",
+    "name": "CFP franc",
+    "symbol": "Fr"
+    }
+    ],
+    "languages": [
+    {
+    "iso639_1": "fr",
+    "iso639_2": "fra",
+    "name": "French",
+    "nativeName": "français"
+    }
+    ],
+    "translations": {
+    "de": "Wallis und Futuna",
+    "es": "Wallis y Futuna",
+    "fr": "Wallis-et-Futuna",
+    "ja": "ウォリス・フツナ",
+    "it": "Wallis e Futuna",
+    "br": "Wallis e Futuna",
+    "pt": "Wallis e Futuna",
+    "nl": "Wallis en Futuna",
+    "hr": "Wallis i Fortuna",
+    "fa": "والیس و فوتونا"
+    },
+    "flag": "https://restcountries.eu/data/wlf.svg",
+    "regionalBlocs": [],
+    "cioc": ""
+    },
+    {
+    "name": "Western Sahara",
+    "topLevelDomain": [
+    ".eh"
+    ],
+    "alpha2Code": "EH",
+    "alpha3Code": "ESH",
+    "callingCodes": [
+    "212"
+    ],
+    "capital": "El Aaiún",
+    "altSpellings": [
+    "EH",
+    "Taneẓroft Tutrimt"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 510713,
+    "latlng": [
+    24.5,
+    -13
+    ],
+    "demonym": "Sahrawi",
+    "area": 266000,
+    "gini": null,
+    "timezones": [
+    "UTC+00:00"
+    ],
+    "borders": [
+    "DZA",
+    "MRT",
+    "MAR"
+    ],
+    "nativeName": "الصحراء الغربية",
+    "numericCode": "732",
+    "currencies": [
+    {
+    "code": "MAD",
+    "name": "Moroccan dirham",
+    "symbol": "د.م."
+    },
+    {
+    "code": "DZD",
+    "name": "Algerian dinar",
+    "symbol": "د.ج"
+    }
+    ],
+    "languages": [
+    {
+    "iso639_1": "es",
+    "iso639_2": "spa",
+    "name": "Spanish",
+    "nativeName": "Español"
+    }
+    ],
+    "translations": {
+    "de": "Westsahara",
+    "es": "Sahara Occidental",
+    "fr": "Sahara Occidental",
+    "ja": "西サハラ",
+    "it": "Sahara Occidentale",
+    "br": "Saara Ocidental",
+    "pt": "Saara Ocidental",
+    "nl": "Westelijke Sahara",
+    "hr": "Zapadna Sahara",
+    "fa": "جمهوری دموکراتیک عربی صحرا"
+    },
+    "flag": "https://restcountries.eu/data/esh.svg",
+    "regionalBlocs": [
+    {
+    "acronym": "AU",
+    "name": "African Union",
+    "otherAcronyms": [],
+    "otherNames": [
+    "الاتحاد الأفريقي",
+    "Union africaine",
+    "União Africana",
+    "Unión Africana",
+    "Umoja wa Afrika"
+    ]
+    }
+    ],
+    "cioc": ""
+    },
+    {
+    "name": "Yemen",
+    "topLevelDomain": [
+    ".ye"
+    ],
+    "alpha2Code": "YE",
+    "alpha3Code": "YEM",
+    "callingCodes": [
+    "967"
+    ],
+    "capital": "Sana'a",
+    "altSpellings": [
+    "YE",
+    "Yemeni Republic",
+    "al-Jumhūriyyah al-Yamaniyyah"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 27478000,
+    "latlng": [
+    15,
+    48
+    ],
+    "demonym": "Yemeni",
+    "area": 527968,
+    "gini": 37.7,
+    "timezones": [
+    "UTC+03:00"
+    ],
+    "borders": [
+    "OMN",
+    "SAU"
+    ],
+    "nativeName": "اليَمَن",
+    "numericCode": "887",
+    "currencies": [
+    {
+    "code": "YER",
+    "name": "Yemeni rial",
+    "symbol": "﷼"
+    }
+    ],
+    "languages": [
+    {
+    "iso639_1": "ar",
+    "iso639_2": "ara",
+    "name": "Arabic",
+    "nativeName": "العربية"
+    }
+    ],
+    "translations": {
+    "de": "Jemen",
+    "es": "Yemen",
+    "fr": "Yémen",
+    "ja": "イエメン",
+    "it": "Yemen",
+    "br": "Iêmen",
+    "pt": "Iémen",
+    "nl": "Jemen",
+    "hr": "Jemen",
+    "fa": "یمن"
+    },
+    "flag": "https://restcountries.eu/data/yem.svg",
+    "regionalBlocs": [
+    {
+    "acronym": "AL",
+    "name": "Arab League",
+    "otherAcronyms": [],
+    "otherNames": [
+    "جامعة الدول العربية",
+    "Jāmiʻat ad-Duwal al-ʻArabīyah",
+    "League of Arab States"
+    ]
+    }
+    ],
+    "cioc": "YEM"
+    },
+    {
+    "name": "Zambia",
+    "topLevelDomain": [
+    ".zm"
+    ],
+    "alpha2Code": "ZM",
+    "alpha3Code": "ZMB",
+    "callingCodes": [
+    "260"
+    ],
+    "capital": "Lusaka",
+    "altSpellings": [
+    "ZM",
+    "Republic of Zambia"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 15933883,
+    "latlng": [
+    -15,
+    30
+    ],
+    "demonym": "Zambian",
+    "area": 752612,
+    "gini": 54.6,
+    "timezones": [
+    "UTC+02:00"
+    ],
+    "borders": [
+    "AGO",
+    "BWA",
+    "COD",
+    "MWI",
+    "MOZ",
+    "NAM",
+    "TZA",
+    "ZWE"
+    ],
+    "nativeName": "Zambia",
+    "numericCode": "894",
+    "currencies": [
+    {
+    "code": "ZMW",
+    "name": "Zambian kwacha",
+    "symbol": "ZK"
+    }
+    ],
+    "languages": [
+    {
+    "iso639_1": "en",
+    "iso639_2": "eng",
+    "name": "English",
+    "nativeName": "English"
+    }
+    ],
+    "translations": {
+    "de": "Sambia",
+    "es": "Zambia",
+    "fr": "Zambie",
+    "ja": "ザンビア",
+    "it": "Zambia",
+    "br": "Zâmbia",
+    "pt": "Zâmbia",
+    "nl": "Zambia",
+    "hr": "Zambija",
+    "fa": "زامبیا"
+    },
+    "flag": "https://restcountries.eu/data/zmb.svg",
+    "regionalBlocs": [
+    {
+    "acronym": "AU",
+    "name": "African Union",
+    "otherAcronyms": [],
+    "otherNames": [
+    "الاتحاد الأفريقي",
+    "Union africaine",
+    "União Africana",
+    "Unión Africana",
+    "Umoja wa Afrika"
+    ]
+    }
+    ],
+    "cioc": "ZAM"
+    },
+    {
+    "name": "Zimbabwe",
+    "topLevelDomain": [
+    ".zw"
+    ],
+    "alpha2Code": "ZW",
+    "alpha3Code": "ZWE",
+    "callingCodes": [
+    "263"
+    ],
+    "capital": "Harare",
+    "altSpellings": [
+    "ZW",
+    "Republic of Zimbabwe"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 14240168,
+    "latlng": [
+    -20,
+    30
+    ],
+    "demonym": "Zimbabwean",
+    "area": 390757,
+    "gini": null,
+    "timezones": [
+    "UTC+02:00"
+    ],
+    "borders": [
+    "BWA",
+    "MOZ",
+    "ZAF",
+    "ZMB"
+    ],
+    "nativeName": "Zimbabwe",
+    "numericCode": "716",
+    "currencies": [
+    {
+    "code": "BWP",
+    "name": "Botswana pula",
+    "symbol": "P"
+    },
+    {
+    "code": "GBP",
+    "name": "British pound",
+    "symbol": "£"
+    },
+    {
+    "code": "CNY",
+    "name": "Chinese yuan",
+    "symbol": "¥"
+    },
+    {
+    "code": "EUR",
+    "name": "Euro",
+    "symbol": "€"
+    },
+    {
+    "code": "INR",
+    "name": "Indian rupee",
+    "symbol": "₹"
+    },
+    {
+    "code": "JPY",
+    "name": "Japanese yen",
+    "symbol": "¥"
+    },
+    {
+    "code": "ZAR",
+    "name": "South African rand",
+    "symbol": "Rs"
+    },
+    {
+    "code": "USD",
+    "name": "United States dollar",
+    "symbol": "$"
+    },
+    {
+    "code": "(none)",
+    "name": null,
+    "symbol": null
+    }
+    ],
+    "languages": [
+    {
+    "iso639_1": "en",
+    "iso639_2": "eng",
+    "name": "English",
+    "nativeName": "English"
+    },
+    {
+    "iso639_1": "sn",
+    "iso639_2": "sna",
+    "name": "Shona",
+    "nativeName": "chiShona"
+    },
+    {
+    "iso639_1": "nd",
+    "iso639_2": "nde",
+    "name": "Northern Ndebele",
+    "nativeName": "isiNdebele"
+    }
+    ],
+    "translations": {
+    "de": "Simbabwe",
+    "es": "Zimbabue",
+    "fr": "Zimbabwe",
+    "ja": "ジンバブエ",
+    "it": "Zimbabwe",
+    "br": "Zimbabwe",
+    "pt": "Zimbabué",
+    "nl": "Zimbabwe",
+    "hr": "Zimbabve",
+    "fa": "زیمباوه"
+    },
+    "flag": "https://restcountries.eu/data/zwe.svg",
+    "regionalBlocs": [
+    {
+    "acronym": "AU",
+    "name": "African Union",
+    "otherAcronyms": [],
+    "otherNames": [
+    "الاتحاد الأفريقي",
+    "Union africaine",
+    "União Africana",
+    "Unión Africana",
+    "Umoja wa Afrika"
+    ]
+    }
+    ],
+    "cioc": "ZIM"
+    }
+    ]
