@@ -7,8 +7,52 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TravelComponent implements OnInit {
 
-  constructor() { }
+  matrixData = [
+    {
+      "state": "telangana"
+    },
+    {
+      "state": "ap"
+    },
+    {
+      "state": "karnataka"
+    },
+    {
+      "state": "maharashtra"
+    },
+    {
+      "state": "telangana"
+    },
+    {
+      "state": "ap"
+    },
+    {
+      "state": "karnataka"
+    },
+    {
+      "state": "maharashtra"
+    },
+    {
+      "state": "telangana"
+    },
+    {
+      "state": "ap"
+    },
+    {
+      "state": "karnataka"
+    },
+    {
+      "state": "maharashtra"
+    }
 
+
+
+
+  ]
+  constructor() { }
+  set(){
+    console.log(event)
+  }
   ngOnInit() {
   }
 

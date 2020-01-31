@@ -60,6 +60,10 @@ export class MutualfundsComponent implements OnInit {
   {
     "Name": 'Mirae Asset Emerging Bluechip Fund - Direct Plan - Growth',
     "code": "118834"
+  },
+  {
+    "Name":"Axis Long Term Equity Fund - Direct Plan - Growth Option",
+    "code":"120503"
   }
 ];
 
