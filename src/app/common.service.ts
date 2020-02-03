@@ -22,4 +22,8 @@ export class CommonService {
   
     return this.http.get(`https://api.mfapi.in/mf/${code}`);
   }
+
+  getGridData(){
+    return this.http.get('assets/json/grid.json');
+  }
 }

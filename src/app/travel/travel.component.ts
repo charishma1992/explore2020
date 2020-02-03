@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-travel',
@@ -7,53 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TravelComponent implements OnInit {
 
-  matrixData = [
-    {
-      "state": "telangana"
-    },
-    {
-      "state": "ap"
-    },
-    {
-      "state": "karnataka"
-    },
-    {
-      "state": "maharashtra"
-    },
-    {
-      "state": "telangana"
-    },
-    {
-      "state": "ap"
-    },
-    {
-      "state": "karnataka"
-    },
-    {
-      "state": "maharashtra"
-    },
-    {
-      "state": "telangana"
-    },
-    {
-      "state": "ap"
-    },
-    {
-      "state": "karnataka"
-    },
-    {
-      "state": "maharashtra"
-    }
-
-
-
-
-  ]
-  constructor() { }
-  set(){
+  matrixData: any;
+  constructor(private http: CommonService) { }
+  set() {
     console.log(event)
   }
+
+
   ngOnInit() {
+  
   }
 
 }

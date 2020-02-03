@@ -15,10 +15,10 @@ import { AgmCoreModule } from '@agm/core';
 import { CountryInDetailComponent } from './country-in-detail/country-in-detail.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { TravelComponent } from './travel/travel.component';
 import { MapsComponent } from './maps/maps.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { MutualfundsComponent } from './mutualfunds/mutualfunds.component';
+import { MatrixComponent } from './matrix/matrix.component';
 
 
 @NgModule({
@@ -27,10 +27,9 @@ import { MutualfundsComponent } from './mutualfunds/mutualfunds.component';
     CountriesComponent,
     CountryInDetailComponent,
     HomeComponent,
-    LoginComponent,
-    TravelComponent,
     MapsComponent,
-    MutualfundsComponent
+    MutualfundsComponent,
+    MatrixComponent
   ],
   imports: [
     BrowserModule,

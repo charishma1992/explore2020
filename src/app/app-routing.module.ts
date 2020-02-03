@@ -5,8 +5,8 @@ import { RouteResolver } from 'src/app/countries/countries.resolve';
 import { CountryInDetailComponent } from 'src/app/country-in-detail/country-in-detail.component';
 import { HomeComponent } from 'src/app/home/home.component';
 import { MapsComponent } from 'src/app/maps/maps.component';
-import { TravelComponent } from 'src/app/travel/travel.component';
 import { MutualfundsComponent } from 'src/app/mutualfunds/mutualfunds.component';
+import { MatrixComponent } from 'src/app/matrix/matrix.component';
 
 const routes: Routes = [
   {
@@ -25,8 +25,8 @@ const routes: Routes = [
     component: MapsComponent
   },
   {
-    path: 'travel',
-    component: TravelComponent
+    path: 'grid',
+    component: MatrixComponent
   },
   {
     path: 'countries',

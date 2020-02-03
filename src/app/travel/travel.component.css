@@ -74,3 +74,13 @@ div.comparisontable ul.row:last-of-type li.legend{
         width: auto;
     }
     }
+
+    .adjustCol{
+        -webkit-box-flex: 0;
+    flex: 0 0 8.333333% !important;
+    max-width: 0.333333% !important;
+    }
+    .rotated {
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+    }
