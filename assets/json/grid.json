@@ -1,0 +1,119 @@
+[
+    {
+      "state": "telangana",
+      "city": [
+          {
+          "name": "hyderabad"
+          },
+          {
+          "name": "warangal"
+          },
+          {
+          "name": "karimnagar"
+          }
+    ]
+    },
+    {
+      "state": "andhra pradesh",
+      "city": [
+          {
+          "name": "guntur"
+          },
+          {
+          "name": "vizag"
+          },
+          {
+          "name": "bhimavaram"
+          }
+    ]
+    },
+    {
+      "state": "karnataka",
+      "city": [
+          {
+          "name": "mysore"
+          },
+          {
+          "name": "banglore"
+          },
+          {
+          "name": "mantralayam"
+          }
+    ]
+    },
+    {
+      "state": "maharashtra",
+      "city": [
+          {
+          "name": "pune"
+          }
+        ]
+    },
+    {
+      "state": "tamilnadu",
+      "city": [
+          {
+          "name": "chennai"
+          }
+        ]
+    },
+    {
+      "state": "westbengal",
+      "city": [
+          {
+          "name": "kolkata"
+          }
+        ]
+    },
+    {
+      "state": "orissa",
+      "city": [
+          {
+          "name": "bhuvaneshwar"
+          }
+        ]
+    },
+    {
+      "state": "madhya pradesh",
+      "city": [
+          {
+          "name": "bhopal"
+          }
+        ]
+    },
+    {
+      "state": "goa",
+      "city": [
+          {
+          "name": "panaji"
+          }
+        ]
+    },
+    {
+      "state": "kerala",
+      "city": [
+          {
+          "name": "trivendrum"
+          }
+        ]
+    },
+    {
+      "state": "gujarat",
+      "city": [
+          {
+          "name": "ahemadabad"
+          }
+        ]
+    },
+    {
+      "state": "rajastan",
+      "city": [
+          {
+          "name": "jaipur"
+          }
+        ]
+    }
+
+
+
+  ]
