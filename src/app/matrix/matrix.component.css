@@ -4,3 +4,25 @@
     max-width: 4.3333%;
 
 }
+table{
+    overflow: hidden;
+}
+tr:hover{
+    background: rgb(199, 197, 197);
+}
+
+td,th{
+    position: relative
+}
+
+td:hover::after,
+th:hover::after {
+    content: "";
+    position:absolute;
+    background-color:rgb(230, 230, 230);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}

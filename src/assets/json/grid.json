@@ -1,6 +1,7 @@
 [
     {
       "state": "telangana",
+      "capital":"hyderabad",
       "city": [
           {
           "name": "hyderabad"
@@ -14,7 +15,8 @@
     ]
     },
     {
-      "state": "andhra pradesh",
+      "state": "ap",
+      "capital":"amaravati",
       "city": [
           {
           "name": "guntur"
@@ -29,6 +31,7 @@
     },
     {
       "state": "karnataka",
+      "capital":"banglore",
       "city": [
           {
           "name": "mysore"
@@ -43,6 +46,7 @@
     },
     {
       "state": "maharashtra",
+      "capital":"pune",  
       "city": [
           {
           "name": "pune"
@@ -51,6 +55,7 @@
     },
     {
       "state": "tamilnadu",
+      "capital":"chennai",
       "city": [
           {
           "name": "chennai"
@@ -59,61 +64,13 @@
     },
     {
       "state": "westbengal",
+      "capital":"kolkata",
       "city": [
           {
           "name": "kolkata"
           }
         ]
-    },
-    {
-      "state": "orissa",
-      "city": [
-          {
-          "name": "bhuvaneshwar"
-          }
-        ]
-    },
-    {
-      "state": "madhya pradesh",
-      "city": [
-          {
-          "name": "bhopal"
-          }
-        ]
-    },
-    {
-      "state": "goa",
-      "city": [
-          {
-          "name": "panaji"
-          }
-        ]
-    },
-    {
-      "state": "kerala",
-      "city": [
-          {
-          "name": "trivendrum"
-          }
-        ]
-    },
-    {
-      "state": "gujarat",
-      "city": [
-          {
-          "name": "ahemadabad"
-          }
-        ]
-    },
-    {
-      "state": "rajastan",
-      "city": [
-          {
-          "name": "jaipur"
-          }
-        ]
     }
-
-
+   
 
   ]

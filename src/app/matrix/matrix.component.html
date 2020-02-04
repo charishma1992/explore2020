@@ -1,3 +1,187 @@
+<div class="row"*ngFor="let x of matrixData;let i = index">
+    <div class="col"  *ngFor="let x of matrixData;let j = index">
+      <div >{{i}}-{{j}}</div>
+      </div>
+
+</div>
+
+
+
+<!--  <table class="table table-hover" id="mytab1">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <ng-container *ngFor="let x of matrixData">
+        <th scope="col" (click)="openCapitalColumn(x.state)">
+          <div>{{x.state}}</div>
+        </th>
+        <ng-container *ngIf="x.showCapitalDataColumn">
+          <th scope="col" *ngFor="let y of x.city" class="fontProxima;" style="color:blue">{{y.name}}</th>
+        </ng-container>
+      </ng-container>
+    </tr>
+
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let x of matrixData">
+      <tr style="background:aliceblue">
+
+        <th (click)="openCapital(x.state)">{{x.state}}</th>
+        <td>{{x.state}}</td>
+        <ng-container *ngFor="let z of x.city;let i= index">
+          <td *ngIf="expandState1 >= i+1">
+            <span>{{z.name}}</span>
+          </td>
+
+        </ng-container>
+        <td>{{x.state}}</td>
+
+        <td>{{x.state}}</td>
+
+      </tr>
+      <ng-container *ngIf="x.showCapitalData">
+        <tr *ngFor="let y of x.city;let i = index" class="fontProxima;" style="color:blue">
+
+          <th (click)="openCity($event)">{{y.name}}</th>
+
+          <td (click)="openCity($event)">{{y.name}}{{i+2}}</td>
+
+        </tr>
+      </ng-container>
+
+    </ng-container>
+
+  </tbody> 
+</table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="row" *ngIf="i==0">
+    <ng-container *ngFor="let y of matrixData">
+      <div class="col-md-1">{{y.state}}</div>
+    </ng-container>
+  </div>
+  <div class="row" *ngIf="i>=0">
+    <ng-container>
+      <div class="col-md-12">{{x.state}}</div>
+    </ng-container>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <table class="table table-hover" id="mytab1">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <ng-container *ngFor="let x of matrixData">
+        <th scope="col" (click)="openCapitalColumn(x.state)">
+          <div>{{x.state}}</div>
+        </th>
+        <ng-container *ngIf="x.showCapitalDataColumn">
+          <th scope="col" *ngFor="let y of x.city" class="fontProxima;" style="color:blue">{{y.name}}</th>
+        </ng-container>
+      </ng-container>
+    </tr>
+
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let x of matrixData">
+      <tr style="background:aliceblue">
+
+        <th (click)="openCapital(x.state)">{{x.state}}</th>
+        <td>{{x.state}}</td>
+        <ng-container *ngFor="let z of x.city;let i= index">
+          <td *ngIf="expandState1 >= i+1">
+            <span>{{z.name}}</span>
+          </td>
+
+        </ng-container>
+        <td>{{x.state}}</td>
+
+        <td>{{x.state}}</td>
+
+      </tr>
+      <ng-container *ngIf="x.showCapitalData">
+        <tr *ngFor="let y of x.city;let i = index" class="fontProxima;" style="color:blue">
+
+          <th (click)="openCity($event)">{{y.name}}</th>
+
+          <td (click)="openCity($event)">{{y.name}}{{i+2}}</td>
+
+        </tr>
+      </ng-container>
+
+    </ng-container>
+
+  </tbody>
+</table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- matrix format -->
 
 <div class="container" style="margin-bottom:35rem">
@@ -12,41 +196,24 @@
             {{x.state}}
           </div>
           <ng-container *ngIf="x.showCapitalDataColumn">
-          <div class="col-md-12 ml-1 adjustCol" *ngFor="let y of x.city"   style="transform: rotate(180deg); 
+            <div class="col-md-12 ml-1 adjustCol" *ngFor="let y of x.city" style="transform: rotate(180deg); 
         writing-mode: tb-rl;background: #f1eeee;">
-        <!--  -->
-            {{y.name}}
-          </div>
+            
+              {{y.name}}
+            </div>
           </ng-container>
         </ng-container>
-
-
-
-        <!-- <div class="col-md-12" style="transform: rotate(180deg); 
-        writing-mode: tb-rl;">
-          <div class="col-md-1 adjustCol" *ngFor="let x of matrixData" >
-            <div>{{x.state}}</div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-md-12 adjustCol" *ngFor="let x of matrixData">
-        <div style="transform: rotate(180deg);
-        writing-mode: tb-rl;"  *ngIf="x.showCapitalDataColumn">{{x.capital}}</div></div> -->
-
-        <!-- <div class="col-md-12 adjustCol" style="transform: rotate(180deg); 
-        writing-mode:tb-rl" *ngFor="let x of matrixData" >
-            <div >{{x.capital}}</div>
-          </div> -->
-
       </div>
     </div>
   </div>
   <div class="row mt-1" *ngFor="let x of matrixData">
-    <div class="col-md-12" style="background: #b9b4b4;cursor:pointer" (click)="openCapital(x.state)"> {{x.state}}</div>
-    <ng-container *ngIf="x.showCapitalData">  
-    <div class="col-md-12 mt-1" *ngFor="let y of x.city" style="background: #f1eeee;cursor:pointer" >
-        <!-- *ngIf="x.showCapitalData" -->
-      {{y.name}}</div>
+    <div class="col-md-12" style="background: #b9b4b4;">
+      <span style="cursor:pointer" (click)="openCapital(x.state)">{{x.state}}</span>
+    </div>
+    <ng-container *ngIf="x.showCapitalData">
+      <div class="col-md-12 mt-1" *ngFor="let y of x.city" style="background: #f1eeee;cursor:pointer">
+     
+        {{y.name}}</div>
     </ng-container>
   </div>
 
@@ -84,11 +251,11 @@
 
 <!-- rotated text-->
 <!--  style="background: radial-gradient(black, transparent) -->
-<!-- <div class="rotated">Text from bottom with working width/height</div> -->-->
+<!-- <div class="rotated">Text from bottom with working width/height</div> -->
 
 <!-- position:absolute and relative -->
 
-<div style="    width: 30%;
+<!-- <div style="    width: 30%;
   background: darkseagreen;position: relative;">
   sdfsdhfhsdkf sdkjfhsdfh sdjkfhsdjfhs sdkjfhsdfjs sjkdfhsd fhdjf dsfhjdsfhjd ioweurwur weruwieurw weurwieuwe; w[eruwpeu ioweurwur
   weruwieurw weurwieuwe; w[eruwpeuioweurwur weruwieurw weurwieuwe; w[eruwpeuioweurwur weruwieurw weurwieuwe; w[eruwpeu
@@ -111,4 +278,4 @@
 <div style="margin-bottom:45rem">
 
   <div></div>
-</div>
+</div> -->

@@ -27,6 +27,7 @@ import { MatrixComponent } from './matrix/matrix.component';
     CountriesComponent,
     CountryInDetailComponent,
     HomeComponent,
+    LoginComponent,
     MapsComponent,
     MutualfundsComponent,
     MatrixComponent
