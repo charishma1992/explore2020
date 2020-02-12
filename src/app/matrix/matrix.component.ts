@@ -9,10 +9,19 @@ import { CommonService } from 'src/app/common.service';
 export class MatrixComponent implements OnInit {
   matrixData: any;
   expandState1: any;
+
+  zoom: number = 8; 
+  
+  // initial center position for the map
+  lat: number = 39.817490;
+  lng: number = -0.231035;
+ 
+  markers:any=[];
+
   constructor(private http: CommonService) { }
   openCapital(statename) {
     var table = document.getElementById("mytab1");
-    console.log('table data',table,);
+    console.log('table data',table,statename);
     this.matrixData.forEach(element => {
       if(element.state === statename){
         element.showCapitalData =  !element.showCapitalData;
@@ -43,6 +52,17 @@ export class MatrixComponent implements OnInit {
     console.log('event',e);
   }
   ngOnInit() {
+
+    this.http.getLocation().subscribe(res=>{
+     
+      for(let data in res.data){
+       this.markers.push({
+           lat: parseInt(res.data[data].lat),
+           long: parseInt(res.data[data].long)
+        })
+      }
+    })
+
     this.http.getGridData().subscribe(data => {
       this.matrixData = data;
       // console.log('statename', this.matrixData);

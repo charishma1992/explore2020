@@ -1,13 +1,101 @@
-<div class="row"*ngFor="let x of matrixData;let i = index">
-    <div class="col"  *ngFor="let x of matrixData;let j = index">
-      <div >{{i}}-{{j}}</div>
-      </div>
-
+<div class="container" style="margin-bottom:30rem">
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false">
+    <agm-marker *ngFor="let m of markers;" [latitude]="m.lat" [longitude]="m.long">
+    </agm-marker>
+  </agm-map>
 </div>
 
 
 
- <table class="table table-hover" id="mytab1">
+
+
+<!-- <div class="container" style="margin-bottom:30rem">
+    <ng-container *ngFor="let x of matrixData;let i = index">
+        <div class="row">
+            <span (click)="openCapital(x.state)">{{x.state}}</span>
+          <div class="col"  *ngFor="let y of matrixData;let j = index">
+            <div  *ngIf="i === 0">{{y.state}}</div>
+            <div  *ngIf="i != 0">{{i}}-{{j}}</div>
+            </div>
+           
+        </div>
+        <ng-container *ngFor="let z of x.city;let z1= index">
+            <div class="row" *ngIf="x.showCapitalData">
+              <span>{{z.name}}</span>
+            </div>
+            <div class="col"  *ngFor="let y of matrixData;let j = index">
+              
+                <div  *ngIf="i != 0 && x.showCapitalData">{{i}}-{{j}}</div>
+                </div>
+            </ng-container>
+    </ng-container>
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <ng-container *ngFor="let x of matrixData">
+        <th scope="col" (click)="openCapitalColumn(x.state)">{{x.state}}</th>
+      <ng-container *ngFor="let y of x.city">
+          <th scope="col"  *ngIf="x.showCapitalDataColumn">{{y.name}}</th>
+       
+      </ng-container>
+     
+      </ng-container>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+   
+      <ng-container *ngFor="let x of matrixData">
+          <tr style="background:aliceblue">
+    
+            <th (click)="openCapital(x.state)">{{x.state}}</th>
+            <td>{{x.state}}</td>
+            <ng-container *ngFor="let z of x.city;let i= index">
+              <td *ngIf="expandState1 >= i+1">
+                <span>{{z.name}}</span>
+              </td>
+    
+            </ng-container>
+            <td>{{x.state}}</td>
+    
+            <td>{{x.state}}</td>
+    
+          </tr>
+          <ng-container *ngIf="x.showCapitalData">
+            <tr *ngFor="let y of x.city;let i = index" class="fontProxima;" style="color:blue">
+    
+              <th (click)="openCity($event)">{{y.name}}</th>
+    
+              <td (click)="openCity($event)">{{y.name}}{{i+2}}</td>
+    
+            </tr>
+          </ng-container>
+    
+        </ng-container>
+  </tbody>
+</table> -->
+
+
+<!-- <table class="table table-hover" id="mytab1">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -52,7 +140,7 @@
     </ng-container>
 
   </tbody> 
-</table>
+</table> -->
 
 
 
@@ -79,7 +167,7 @@
 
 
 
-  <!-- <div class="row" *ngIf="i==0">
+<!-- <div class="row" *ngIf="i==0">
     <ng-container *ngFor="let y of matrixData">
       <div class="col-md-1">{{y.state}}</div>
     </ng-container>
@@ -184,7 +272,7 @@
 
 <!-- matrix format -->
 
-<div class="container" style="margin-bottom:35rem">
+<!-- <div class="container" style="margin-bottom:35rem">
 
   <div class="row">
     <div class="col-md-2"></div>
@@ -217,7 +305,7 @@
     </ng-container>
   </div>
 
-</div>
+</div> -->
 
 
 

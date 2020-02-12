@@ -19,6 +19,7 @@ import { MapsComponent } from './maps/maps.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { MutualfundsComponent } from './mutualfunds/mutualfunds.component';
 import { MatrixComponent } from './matrix/matrix.component';
+import { GameComponent } from './game/game.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MatrixComponent } from './matrix/matrix.component';
     LoginComponent,
     MapsComponent,
     MutualfundsComponent,
-    MatrixComponent
+    MatrixComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,

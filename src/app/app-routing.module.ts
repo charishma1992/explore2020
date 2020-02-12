@@ -7,6 +7,7 @@ import { HomeComponent } from 'src/app/home/home.component';
 import { MapsComponent } from 'src/app/maps/maps.component';
 import { MutualfundsComponent } from 'src/app/mutualfunds/mutualfunds.component';
 import { MatrixComponent } from 'src/app/matrix/matrix.component';
+import { GameComponent } from 'src/app/game/game.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'grid',
     component: MatrixComponent
+  },
+  {
+    path: 'game',
+    component: GameComponent
   },
   {
     path: 'countries',

@@ -26,3 +26,7 @@ th:hover::after {
     width: 100%;
     z-index: -1;
 }
+
+agm-map {
+  height: 500px;
+}

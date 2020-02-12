@@ -1,4 +1,5 @@
 [
+ 
     {
       "state": "telangana",
       "capital":"hyderabad",
@@ -15,7 +16,7 @@
     ]
     },
     {
-      "state": "ap",
+      "state": "andhara",
       "capital":"amaravati",
       "city": [
           {
